@@ -5,3 +5,4 @@ My portfolio of applications for all initiatives
 Git
 GitHub
 SSH
+Brew
