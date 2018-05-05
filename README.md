@@ -1,2 +1,2 @@
-# my-portfolio
-My portfolio of applications
+# Vinoo's Portfolio
+My portfolio of applications for all initiatives
