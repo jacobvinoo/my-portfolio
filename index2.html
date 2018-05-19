@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Football World Cup 2018</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo"/>
+
+  </head>
+
+  <body>
+    <main class="overflow--auto">
+      <h1 class="color--skyBlue section__heading--largest">
+        World
+      </h1>
+
+      <ul class="section--social">
+
+        <!--Links to relevant professional social media & resume -->
+        <!-- See: http://fontawesome.io/icons/#brand for more -->
+
+        <!-- Link to Linked In profile -->
+        <!--
+        <li class="socialWrapper">
+          <a class="color--skyBlue social"
+             title="LinkedIn Profile"
+             target="_blank"
+             href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        -->
+
+        <!-- Link to GitHub profile -->
+        <li class="socialWrapper color--skyBlue">
+          <a class="social color--skyBlue"
+             title="GitHub Profile"
+             target="_blank"
+             href="#">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+
+        <!-- Link to resume, probably a .pdf -->
+        <li class="socialWrapper">
+          <a class="social color--skyBlue"
+             title="Resume"
+             href="#">
+            <i class="fa fa-file-text"></i>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <section class="background--skyBlue section">
+      <h2 class="color--cloud margin--none section__text--centered">
+
+        <button id="main1" type="button"></button>
+        <button id="main2" type="button" ></button>
+        <button id="main3" type="button"></button>
+    </section>
+    <section class="background--black section">
+        <table id="myTable" style="font-size:10px" cellpadding="2" cellspacing="2" border="1" onclick="tester()"></table>
+
+      </h2>
+    </section>
+
+
+
+
+
+    <section class="section section--alignCentered section--description">
+      <p class="color--darkgrey section__description">
+      Check out the schedules and all the details about Football Worldcup 2018. Enjoy the spectacle !!
+      </p>
+
+    <div class="background--skyBlue modal--closed">
+      <span class="color--cloud modal__closeButton">
+        <i class="fa fa-window-close-o"></i>
+      </span>
+      <img alt="example screenshot of a project involving code"
+           class="modal__image"
+           src="images/example1.png"/>
+      <div class="color--cloud modal__text">
+        <h2 class="modal__title">
+          Work Example Name
+        </h2>
+        <a class="color--skyBlue modal__link"
+           href="#">
+          Check it out
+        </a>
+        <p class="modal__description">
+          A long description of the work in question.
+        </p>
+      </div>
+    </div>
+    <script src = "teamSchedule.js"> </script>
+    <script type="text/Javascript">
+      let main1Cont = "Team";
+      let main2Cont = "Date";
+      let main3Cont = "Venue"
+
+      document.getElementById("main1").innerHTML = main1Cont;
+      document.getElementById("main2").innerHTML = main2Cont;
+      document.getElementById("main3").innerHTML = main3Cont;
+
+
+    </script>
+
+    <script>
+
+            for (var j = 0; j < teamList.length; j++) {
+
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(j);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+
+
+                cell1.innerHTML = teamList[j].name;
+                cell2.innerHTML = teamList[j].group;
+
+            }
+    </script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js'>
+    var canvas;
+
+      function setup() {
+        canvas = createCanvas(600, 400);
+        canvas.position(300, 50);
+        canvas.class("lemon");
+        }
+        function draw() {
+        // These commands are applied to the graphics canvas as normal.
+        background(220, 180, 200);
+        ellipse(width/2, height/2, 100, 100);
+        ellipse(width/4, height/2, 50, 50);
+        }
+    </script>
+</html>
